@@ -1,10 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".LimasSegitiga">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            android:background="#4B0152"
+            android:padding="30dp"
+            android:text="LIMAS SEGITIGA"
+            android:textColor="#FFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/screenshot_2024_10_29_234202" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTSegitiga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Masukkan alas segitiga "
+            android:inputType="text"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTLimas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Masukkan tinggi limas"
+            android:inputType="text"
+            android:textSize="16sp" />
+        />
+
+        <EditText
+            android:id="@+id/editTextText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Masukkan tinggi segitiga"
+            android:inputType="text"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonLuas"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_kotak"
+            android:text="HITUNG LUAS"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/buttonVolume"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_kotak"
+            android:text="HITUNG VOLUME"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editHasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Hasil"
+            android:inputType="text"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
